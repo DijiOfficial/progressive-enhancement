@@ -1,0 +1,126 @@
+h1{
+    color: black;
+    
+}
+p{
+    font-family: georgia;
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #444444;
+}
+a {
+    outline: none;
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+color: #b820b8;
+}
+
+a:focus {
+    border: 2px solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+    background-color: lightpink;
+    background: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: url("pics/blscrn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+blockquote{
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+q{
+    font-size: 160%;
+    background-color: lightgray;
+    border-left: 3px solid firebrick;
+    padding-left: 30px;
+    font-style: italic;
+}
+.villagers{
+    border-left: 3px solid yellow;
+}
+.farmer{
+    border-left: 3px solid green;
+}
+header:first-child{
+    background-color: yellow;
+}
+.good{
+    text-transform: capitalize;
+    color: green;
+}
+.bad{
+    text-transform: capitalize;
+    color: red;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: grey;
+}
+li:first-child::after{
+    background-image: url('pics/bien.png');
+    background-size: 35px 35px;
+    display: inline-block;
+    width: 35px; 
+    height: 35px;
+    content:"";
+}
+li:nth-child(2)::after{
+    background-image: url('pics/mal.png');
+    background-size: 35px 35px;
+    display: inline-block;
+    width: 35px; 
+    height: 35px;
+    content:"";
+}
+li:nth-child(3)::after{
+    background-image: url('pics/chat.png');
+    background-size: 35px 35px;
+    display: inline-block;
+    width: 35px; 
+    height: 35px;
+    content:"";
+}
+p:first-child{
+    font-weight: bold ;
+}
+.container{
+    display:flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.container2{
+    display: flex;
+    gap: 20px;
+}
+img{
+    max-width: 100%;
+}
+.container > div{
+    flex-basis: 50%;
+}
+.container2 > div{
+    flex-basis: 50%;
+}
